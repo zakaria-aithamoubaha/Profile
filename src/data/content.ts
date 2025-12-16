@@ -69,7 +69,8 @@ export const content: Record<Language, Content> = {
     },
     about: {
       title: 'About',
-      description: 'Passionate Junior Network & System Administrator with CCNA certification and hands-on experience in network infrastructure, Cisco technologies, and system administration. Skilled in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently pursuing a Bachelor\'s degree in Computer Science while actively expanding expertise in enterprise networking solutions.',
+      description:
+        'Passionate Junior Network & System Administrator with CCNA certification and hands-on experience in network infrastructure, Cisco technologies, and system administration. Skilled in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently pursuing a Bachelor\'s degree in Computer Science while actively expanding expertise in enterprise networking solutions.',
     },
     skills: {
       title: 'Technical Skills',
@@ -95,10 +96,13 @@ export const content: Record<Language, Content> = {
       title: 'Languages',
     },
     cli: {
-      welcome: 'Welcome to Zakaria\'s Portfolio Terminal. Type "help" for available commands.',
+      welcome:
+        'Welcome to Zakaria\'s Portfolio Terminal. Type "help" for available commands.',
       help: 'Available Commands',
-      commandNotFound: 'Command not found. Type "help" for available commands.',
-      availableCommands: 'Available commands: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
+      commandNotFound:
+        'Command not found. Type "help" for available commands.',
+      availableCommands:
+        'Available commands: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
       languageChanged: 'Language changed to',
     },
   },
@@ -119,7 +123,8 @@ export const content: Record<Language, Content> = {
     },
     about: {
       title: 'Chi Sono',
-      description: 'Appassionato Junior Network & System Administrator con certificazione CCNA ed esperienza pratica in infrastrutture di rete, tecnologie Cisco e amministrazione di sistemi. Competente in Windows Server 2022, amministrazione Linux, virtualizzazione VMware e sicurezza di rete. Attualmente sto conseguendo una Laurea Triennale in Informatica mentre espando attivamente le competenze nelle soluzioni di networking aziendale.',
+      description:
+        'Appassionato Junior Network & System Administrator con certificazione CCNA ed esperienza pratica in infrastrutture di rete, tecnologie Cisco e amministrazione di sistemi. Competente in Windows Server 2022, amministrazione Linux, virtualizzazione VMware e sicurezza di rete. Attualmente sto conseguendo una Laurea Triennale in Informatica mentre espando attivamente le competenze nelle soluzioni di networking aziendale.',
     },
     skills: {
       title: 'Competenze Tecniche',
@@ -145,10 +150,13 @@ export const content: Record<Language, Content> = {
       title: 'Lingue',
     },
     cli: {
-      welcome: 'Benvenuto nel Terminale Portfolio di Zakaria. Digita "help" per i comandi disponibili.',
+      welcome:
+        'Benvenuto nel Terminale Portfolio di Zakaria. Digita "help" per i comandi disponibili.',
       help: 'Comandi Disponibili',
-      commandNotFound: 'Comando non trovato. Digita "help" per i comandi disponibili.',
-      availableCommands: 'Comandi disponibili: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
+      commandNotFound:
+        'Comando non trovato. Digita "help" per i comandi disponibili.',
+      availableCommands:
+        'Comandi disponibili: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
       languageChanged: 'Lingua cambiata in',
     },
   },
@@ -181,6 +189,21 @@ export const skills = [
 export const experiences = {
   en: [
     {
+      title: 'Tecnico Reti',
+      company: 'VMWay',
+      location: 'Piedmont, Italy',
+      period: 'Dec 2025 - Present',
+      description: [
+        'Installation and configuration of network devices for clients',
+        'Rack mounting of switches, routers, and other network devices',
+        'Installation and replacement of hardware modules',
+        'Verification of proper functioning of installed devices',
+        'Troubleshooting and network problem resolution',
+        'Collaboration with remote technical teams for configuration and testing',
+        'Support during activation and production phases of devices',
+      ],
+    },
+    {
       title: 'Network Systems Intern',
       company: 'Novanext',
       location: 'Torino, Italia',
@@ -206,6 +229,21 @@ export const experiences = {
     },
   ],
   it: [
+    {
+      title: 'Tecnico Reti',
+      company: 'VMWay',
+      location: 'Piemonte, Italia',
+      period: 'Dic 2025 - Attuale',
+      description: [
+        'Installazione e configurazione di apparati di rete presso i clienti',
+        'Montaggio a rack di switch, router e dispositivi di rete',
+        'Installazione e sostituzione di moduli hardware',
+        'Verifica del corretto funzionamento degli apparati installati',
+        'Attività di troubleshooting e risoluzione problemi di rete',
+        'Collaborazione con team tecnici remoti per configurazioni e test',
+        'Supporto durante le fasi di attivazione e messa in produzione degli apparati',
+      ],
+    },
     {
       title: 'Tirocinante Sistemista di Rete',
       company: 'Novanext',
@@ -240,21 +278,24 @@ export const education = {
       institution: 'Università degli Studi di Verona',
       location: 'Verona, Italia',
       period: 'October 2022 - Present',
-      description: 'Computer Architecture, Operating Systems, Programming and Software Engineering, Algorithms',
+      description:
+        'Computer Architecture, Operating Systems, Programming and Software Engineering, Algorithms',
     },
     {
       degree: 'Network Systems Technician Course',
       institution: 'Immaginazione E Lavoro',
       location: 'Torino, Italia',
       period: 'March 2025 - November 2025',
-      description: 'Network architecture and networking principles, IT security and system protection best practices, Operating systems (Windows and Linux), Windows and Windows Server 2022 administration, Virtual machines and VMware virtualization, CCNA Cisco Networking Academy',
+      description:
+        'Network architecture and networking principles, IT security and system protection best practices, Operating systems (Windows and Linux), Windows and Windows Server 2022 administration, Virtual machines and VMware virtualization, CCNA Cisco Networking Academy',
     },
     {
       degree: 'Specialized Technical Diploma in Computer Systems and Networks',
       institution: 'ISTA - Istituto Specializzato di Tecnologia Applicata',
       location: 'Rabat, Morocco',
       period: 'September 2016 - July 2018',
-      description: 'Network infrastructure implementation, Windows and Linux environment administration, Digital infrastructure security',
+      description:
+        'Network infrastructure implementation, Windows and Linux environment administration, Digital infrastructure security',
     },
   ],
   it: [
@@ -263,21 +304,24 @@ export const education = {
       institution: 'Università degli Studi di Verona',
       location: 'Verona, Italia',
       period: 'Ottobre 2022 - Attuale',
-      description: 'Architettura dei calcolatori, Sistemi operativi, Programmazione e ingegneria del software, Algoritmi',
+      description:
+        'Architettura dei calcolatori, Sistemi operativi, Programmazione e ingegneria del software, Algoritmi',
     },
     {
       degree: 'Corso Tecnico Sistemista di Reti',
       institution: 'Immaginazione E Lavoro',
       location: 'Torino, Italia',
       period: 'Marzo 2025 - Novembre 2025',
-      description: 'Architetture di rete e principi di networking, Sicurezza informatica e best practice di protezione dei sistemi, Sistemi operativi (Windows e Linux), Amministrazione Windows e Windows Server 2022, Utilizzo di macchine virtuali e virtualizzazione con VMware, CCNA Cisco Networking Academy',
+      description:
+        'Architetture di rete e principi di networking, Sicurezza informatica e best practice di protezione dei sistemi, Sistemi operativi (Windows e Linux), Amministrazione Windows e Windows Server 2022, Utilizzo di macchine virtuali e virtualizzazione con VMware, CCNA Cisco Networking Academy',
     },
     {
       degree: 'Diploma Tecnico Specializzato in Sistemi e Reti Informatici',
       institution: 'ISTA - Istituto Specializzato di Tecnologia Applicata',
       location: 'Rabat, Marocco',
       period: 'Settembre 2016 - Luglio 2018',
-      description: 'Realizzazione di un\'infrastruttura di rete, Amministrazione di un ambiente Windows e Linux, Sicurezza di un\'infrastruttura digitale',
+      description:
+        'Realizzazione di un\'infrastruttura di rete, Amministrazione di un ambiente Windows e Linux, Sicurezza di un\'infrastruttura digitale',
     },
   ],
 };
