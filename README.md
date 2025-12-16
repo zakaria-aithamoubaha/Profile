@@ -36,6 +36,7 @@ A modern, bilingual portfolio website for a Junior Network & System Administrato
 
 ## Design
 
+
 ### Visual Mode Aesthetic
 - **Color Palette**:
   - Background: Warm off-white (#fafaf9)
