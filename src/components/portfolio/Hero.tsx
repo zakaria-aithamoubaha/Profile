@@ -67,7 +67,8 @@ export default function Hero({ content, onCopy }: HeroProps) {
             <div className="relative">
               <div className="absolute inset-0 bg-[#049fd9] rounded-full blur-2xl opacity-20"></div>
               <img
-                src={personalInfo.photo}
+                // Use BASE_URL to handle GitHub Pages subpath
+                src={`${import.meta.env.BASE_URL}${personalInfo.photo}`}
                 alt={personalInfo.name}
                 className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-2xl border-4 border-white"
               />
