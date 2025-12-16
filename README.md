@@ -16,6 +16,7 @@ A modern, bilingual portfolio website for a Junior Network & System Administrato
   - Cisco certifications display
   - Language proficiency indicators
   - Contact information with copy-to-clipboard functionality
+  - 
 
 ### CLI Mode
 - **Terminal Interface**: Full-screen terminal experience
