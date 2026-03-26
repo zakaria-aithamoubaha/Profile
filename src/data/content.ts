@@ -136,7 +136,7 @@ export const personalInfo = {
   photo: 'profile.jpg',
 };
 
-export const skills = [
+export const skillsList = [
   'Cisco Networking (CCNA)',
   'Windows Server 2022',
   'Linux Administration',
@@ -250,10 +250,26 @@ export const experiences = {
 };
 
 export const certifications = [
-  { name: 'Cisco Black Belt – Advance Support Stage 1', issuer: 'Cisco Partner Training', date: 'October 2025' },
-  { name: 'CCNA: Introduction to Networks', issuer: 'Cisco Certified', date: 'July 2025' },
-  { name: 'CCNA Routing and Switching: Routing and Switching Essentials', issuer: 'Cisco Certified', date: 'July 2018' },
-  { name: 'CCNA Security', issuer: 'Cisco Certified', date: 'July 2018' },
+  {
+    name: 'Cisco Black Belt – Advance Support Stage 1',
+    issuer: 'Cisco Partner Training',
+    date: 'October 2025',
+  },
+  {
+    name: 'CCNA: Introduction to Networks',
+    issuer: 'Cisco Certified',
+    date: 'July 2025',
+  },
+  {
+    name: 'CCNA Routing and Switching: Routing and Switching Essentials',
+    issuer: 'Cisco Certified',
+    date: 'July 2018',
+  },
+  {
+    name: 'CCNA Security',
+    issuer: 'Cisco Certified',
+    date: 'July 2018',
+  },
 ];
 
 export const languages = [
