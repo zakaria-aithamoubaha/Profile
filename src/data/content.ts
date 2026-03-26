@@ -126,6 +126,7 @@ export const content: Record<Language, Content> = {
   },
 };
 
+// Personal info
 export const personalInfo = {
   name: 'Zakaria Ait Hamou Baha',
   email: 'zakariaaithamoubaha@gmail.com',
@@ -136,6 +137,7 @@ export const personalInfo = {
   photo: 'profile.jpg',
 };
 
+// Technical skills list
 export const skillsList = [
   'Cisco Networking (CCNA)',
   'Windows Server 2022',
@@ -150,6 +152,7 @@ export const skillsList = [
   'Microsoft 365',
 ];
 
+// Work experiences
 export const experiences = {
   en: [
     {
@@ -249,6 +252,7 @@ export const experiences = {
   ],
 };
 
+// Certifications
 export const certifications = [
   {
     name: 'Cisco Black Belt – Advance Support Stage 1',
@@ -272,6 +276,7 @@ export const certifications = [
   },
 ];
 
+// Languages
 export const languages = [
   { name: 'Arabic', level: 'Native', proficiency: 100 },
   { name: 'Italian', level: 'C1', proficiency: 90 },
