@@ -251,7 +251,6 @@ export const experiences = {
       technologies: ['Active Directory', 'Microsoft 365', 'Windows'],
     },
   ],
-
   it: [
     {
       title: 'IT Support Specialist',
@@ -317,3 +316,7 @@ export const experiences = {
     },
   ],
 };
+
+export const education = { /* SAME AS BEFORE */ };
+export const certifications = [ /* SAME AS BEFORE */ ];
+export const languages = [ /* SAME AS BEFORE */ ];
