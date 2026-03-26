@@ -96,13 +96,10 @@ export const content: Record<Language, Content> = {
       title: 'Languages',
     },
     cli: {
-      welcome:
-        'Welcome to Zakaria\'s Portfolio Terminal. Type "help" for available commands.',
+      welcome: "Welcome to Zakaria's Portfolio Terminal. Type \"help\" for available commands.",
       help: 'Available Commands',
-      commandNotFound:
-        'Command not found. Type "help" for available commands.',
-      availableCommands:
-        'Available commands: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
+      commandNotFound: 'Command not found. Type "help" for available commands.',
+      availableCommands: 'Available commands: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
       languageChanged: 'Language changed to',
     },
   },
@@ -150,13 +147,10 @@ export const content: Record<Language, Content> = {
       title: 'Lingue',
     },
     cli: {
-      welcome:
-        'Benvenuto nel Terminale Portfolio di Zakaria. Digita "help" per i comandi disponibili.',
+      welcome: 'Benvenuto nel Terminale Portfolio di Zakaria. Digita "help" per i comandi disponibili.',
       help: 'Comandi Disponibili',
-      commandNotFound:
-        'Comando non trovato. Digita "help" per i comandi disponibili.',
-      availableCommands:
-        'Comandi disponibili: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
+      commandNotFound: 'Comando non trovato. Digita "help" per i comandi disponibili.',
+      availableCommands: 'Comandi disponibili: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
       languageChanged: 'Lingua cambiata in',
     },
   },
