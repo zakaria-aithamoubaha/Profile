@@ -65,11 +65,12 @@ export const content: Record<Language, Content> = {
     hero: {
       name: 'Zakaria Ait Hamou Baha',
       title: 'Junior Network & System Administrator',
-      location: 'Torino, Italia',
+      location: 'Turin, Italy',
     },
     about: {
       title: 'About',
-      description: 'Passionate Network & System Administrator with CCNA certification and hands-on experience in network infrastructure, Cisco technologies, and system administration. Skilled in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently pursuing a Bachelor\'s degree in Computer Science while actively expanding expertise in enterprise networking solutions.',
+      description:
+        "Passionate Network & System Administrator with CCNA certification and hands-on experience in network infrastructure, Cisco technologies, and system administration. Skilled in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently pursuing a Bachelor's degree in Computer Science while actively expanding expertise in enterprise networking solutions.",
     },
     skills: {
       title: 'Technical Skills',
@@ -95,10 +96,13 @@ export const content: Record<Language, Content> = {
       title: 'Languages',
     },
     cli: {
-      welcome: 'Welcome to Zakaria\'s Portfolio Terminal. Type "help" for available commands.',
+      welcome:
+        'Welcome to Zakaria\'s Portfolio Terminal. Type "help" for available commands.',
       help: 'Available Commands',
-      commandNotFound: 'Command not found. Type "help" for available commands.',
-      availableCommands: 'Available commands: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
+      commandNotFound:
+        'Command not found. Type "help" for available commands.',
+      availableCommands:
+        'Available commands: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
       languageChanged: 'Language changed to',
     },
   },
@@ -119,7 +123,8 @@ export const content: Record<Language, Content> = {
     },
     about: {
       title: 'Chi Sono',
-      description: 'Appassionato Junior Network & System Administrator con certificazione CCNA ed esperienza pratica in infrastrutture di rete, tecnologie Cisco e amministrazione di sistemi. Competente in Windows Server 2022, amministrazione Linux, virtualizzazione VMware e sicurezza di rete. Attualmente sto conseguendo una Laurea Triennale in Informatica mentre espando attivamente le competenze nelle soluzioni di networking aziendale.',
+      description:
+        'Appassionato Junior Network & System Administrator con certificazione CCNA ed esperienza pratica in infrastrutture di rete, tecnologie Cisco e amministrazione di sistemi. Competente in Windows Server 2022, amministrazione Linux, virtualizzazione VMware e sicurezza di rete. Attualmente sto conseguendo una Laurea Triennale in Informatica mentre espando attivamente le competenze nelle soluzioni di networking aziendale.',
     },
     skills: {
       title: 'Competenze Tecniche',
@@ -145,10 +150,13 @@ export const content: Record<Language, Content> = {
       title: 'Lingue',
     },
     cli: {
-      welcome: 'Benvenuto nel Terminale Portfolio di Zakaria. Digita "help" per i comandi disponibili.',
+      welcome:
+        'Benvenuto nel Terminale Portfolio di Zakaria. Digita "help" per i comandi disponibili.',
       help: 'Comandi Disponibili',
-      commandNotFound: 'Comando non trovato. Digita "help" per i comandi disponibili.',
-      availableCommands: 'Comandi disponibili: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
+      commandNotFound:
+        'Comando non trovato. Digita "help" per i comandi disponibili.',
+      availableCommands:
+        'Comandi disponibili: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
       languageChanged: 'Lingua cambiata in',
     },
   },
@@ -177,61 +185,6 @@ export const skills = [
   'Cisco DNA',
   'Microsoft 365',
 ];
-
-export const experiences = {
-  en: [
-    {
-      title: 'Network Systems Intern',
-      company: 'Novanext',
-      location: 'Torino, Italia',
-      period: 'September 2025 - October 2025',
-      description: [
-        'Network monitoring and support for enterprise networks',
-        'Configuration and maintenance of Cisco network devices',
-        'Technical team collaboration for system installation, updates, and maintenance',
-        'Introduction to Cisco Meraki, Cisco DNA, and network infrastructure technologies',
-      ],
-    },
-    {
-      title: 'IT Help Desk',
-      company: 'Groupe ISCAE',
-      location: 'Rabat, Morocco',
-      period: 'November 2019 - May 2020',
-      description: [
-        'Hardware and software troubleshooting ensuring operational continuity',
-        'Installation, configuration, and updates of drivers, applications, and IT devices',
-        'Microsoft 365 user support and assistance',
-        'Network monitoring and connectivity/security issue resolution',
-      ],
-    },
-  ],
-  it: [
-    {
-      title: 'Tirocinante Sistemista di Rete',
-      company: 'Novanext',
-      location: 'Torino, Italia',
-      period: 'Settembre 2025 - Ottobre 2025',
-      description: [
-        'Supporto al monitoraggio delle reti aziendali',
-        'Assistenza nella configurazione di apparati di rete Cisco',
-        'Affiancamento al team tecnico per installazione, aggiornamento e manutenzione di sistemi informatici',
-        'Attività introduttive su tecnologie Cisco Meraki, Cisco DNA e infrastrutture di rete',
-      ],
-    },
-    {
-      title: 'Help Desk IT',
-      company: 'Groupe ISCAE',
-      location: 'Rabat, Marocco',
-      period: 'Novembre 2019 - Maggio 2020',
-      description: [
-        'Diagnosi e risoluzione di problemi hardware e software, garantendo continuità operativa',
-        'Installazione, configurazione e aggiornamento di driver, applicativi e dispositivi informatici',
-        'Supporto e assistenza agli utenti su Microsoft 365',
-        'Monitoraggio della rete e supporto nella risoluzione di problemi di connettività e sicurezza',
-      ],
-    },
-  ],
-};
 
 export const experiences = {
   en: [
