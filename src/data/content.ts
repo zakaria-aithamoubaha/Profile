@@ -64,13 +64,12 @@ export const content: Record<Language, Content> = {
     },
     hero: {
       name: 'Zakaria Ait Hamou Baha',
-      title: 'IT Support & Network/System Engineer',
+      title: 'Junior Network & System Administrator',
       location: 'Torino, Italia',
     },
     about: {
       title: 'About',
-      description:
-        'Passionate Junior Network & System Administrator with CCNA certification and hands-on experience in network infrastructure, Cisco technologies, and system administration. Skilled in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently pursuing a Bachelor\'s degree in Computer Science while actively expanding expertise in enterprise networking solutions.',
+      description: 'Passionate Junior Network & System Administrator with CCNA certification and hands-on experience in network infrastructure, Cisco technologies, and system administration. Skilled in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently pursuing a Bachelor\'s degree in Computer Science while actively expanding expertise in enterprise networking solutions.',
     },
     skills: {
       title: 'Technical Skills',
@@ -96,13 +95,10 @@ export const content: Record<Language, Content> = {
       title: 'Languages',
     },
     cli: {
-      welcome:
-        'Welcome to Zakaria\'s Portfolio Terminal. Type "help" for available commands.',
+      welcome: 'Welcome to Zakaria\'s Portfolio Terminal. Type "help" for available commands.',
       help: 'Available Commands',
-      commandNotFound:
-        'Command not found. Type "help" for available commands.',
-      availableCommands:
-        'Available commands: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
+      commandNotFound: 'Command not found. Type "help" for available commands.',
+      availableCommands: 'Available commands: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
       languageChanged: 'Language changed to',
     },
   },
@@ -118,13 +114,12 @@ export const content: Record<Language, Content> = {
     },
     hero: {
       name: 'Zakaria Ait Hamou Baha',
-      title: 'IT Support & Sistemista di Rete',
+      title: 'Junior Network & System Administrator',
       location: 'Torino, Italia',
     },
     about: {
       title: 'Chi Sono',
-      description:
-        'Appassionato Junior Network & System Administrator con certificazione CCNA ed esperienza pratica in infrastrutture di rete, tecnologie Cisco e amministrazione di sistemi. Competente in Windows Server 2022, amministrazione Linux, virtualizzazione VMware e sicurezza di rete. Attualmente sto conseguendo una Laurea Triennale in Informatica mentre espando attivamente le competenze nelle soluzioni di networking aziendale.',
+      description: 'Appassionato Junior Network & System Administrator con certificazione CCNA ed esperienza pratica in infrastrutture di rete, tecnologie Cisco e amministrazione di sistemi. Competente in Windows Server 2022, amministrazione Linux, virtualizzazione VMware e sicurezza di rete. Attualmente sto conseguendo una Laurea Triennale in Informatica mentre espando attivamente le competenze nelle soluzioni di networking aziendale.',
     },
     skills: {
       title: 'Competenze Tecniche',
@@ -150,13 +145,10 @@ export const content: Record<Language, Content> = {
       title: 'Lingue',
     },
     cli: {
-      welcome:
-        'Benvenuto nel Terminale Portfolio di Zakaria. Digita "help" per i comandi disponibili.',
+      welcome: 'Benvenuto nel Terminale Portfolio di Zakaria. Digita "help" per i comandi disponibili.',
       help: 'Comandi Disponibili',
-      commandNotFound:
-        'Comando non trovato. Digita "help" per i comandi disponibili.',
-      availableCommands:
-        'Comandi disponibili: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
+      commandNotFound: 'Comando non trovato. Digita "help" per i comandi disponibili.',
+      availableCommands: 'Comandi disponibili: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
       languageChanged: 'Lingua cambiata in',
     },
   },
@@ -169,7 +161,7 @@ export const personalInfo = {
   linkedin: 'https://www.linkedin.com/in/zakaria-aithamoubaha/',
   github: 'https://github.com/zakaria-aithamoubaha/Portfolio',
   location: 'Torino, Italia',
-  photo: '/profile.jpg',
+  photo: 'https://img.sanishtech.com/u/b63590c40c54aceb9d36cae794dd9c51.jpg',
 };
 
 export const skills = [
@@ -189,42 +181,6 @@ export const skills = [
 export const experiences = {
   en: [
     {
-      title: 'IT Support Specialist',
-      company: 'Everience',
-      location: 'Milano, Italy',
-      period: 'Feb 2026 - Present',
-      description: [
-        'Identity Access Management: user provisioning and lifecycle management using Active Directory, Okta, and SAP IDM',
-        'IT Service Management: incident, access, and request handling through ServiceNow while maintaining SLA compliance',
-        'Endpoint Mobility Management: device enrollment, configuration, and security policy enforcement using Microsoft Intune, VMware AirWatch, and MDM solutions',
-      ],
-      technologies: [
-        'Active Directory',
-        'Okta',
-        'SAP IDM',
-        'ServiceNow',
-        'Microsoft Intune',
-        'VMware AirWatch',
-        'MDM',
-      ],
-    },
-    {
-      title: 'Tecnico Reti',
-      company: 'VMWay',
-      location: 'Piedmont, Italy',
-      period: 'Dec 2025 - Jan 2026',
-      description: [
-        'Installation and configuration of network devices for clients',
-        'Rack mounting of switches, routers, and other network devices',
-        'Installation and replacement of hardware modules',
-        'Verification of proper functioning of installed devices',
-        'Troubleshooting and network problem resolution',
-        'Collaboration with remote technical teams for configuration and testing',
-        'Support during activation and production phases of devices',
-      ],
-      technologies: ['Cisco', 'TCP/IP', 'Routing & Switching'],
-    },
-    {
       title: 'Network Systems Intern',
       company: 'Novanext',
       location: 'Torino, Italia',
@@ -235,7 +191,6 @@ export const experiences = {
         'Technical team collaboration for system installation, updates, and maintenance',
         'Introduction to Cisco Meraki, Cisco DNA, and network infrastructure technologies',
       ],
-      technologies: ['Cisco', 'Cisco Meraki', 'Cisco DNA'],
     },
     {
       title: 'IT Help Desk',
@@ -248,46 +203,9 @@ export const experiences = {
         'Microsoft 365 user support and assistance',
         'Network monitoring and connectivity/security issue resolution',
       ],
-      technologies: ['Active Directory', 'Microsoft 365', 'Windows'],
     },
   ],
   it: [
-    {
-      title: 'IT Support Specialist',
-      company: 'Everience',
-      location: 'Milano, Italia',
-      period: 'Feb 2026 - Attuale',
-      description: [
-        'Gestione delle identità e degli accessi: provisioning utenti e gestione del ciclo di vita tramite Active Directory, Okta e SAP IDM',
-        'IT Service Management: gestione di incident, accessi e richieste tramite ServiceNow garantendo il rispetto degli SLA',
-        'Endpoint Mobility Management: registrazione dispositivi, configurazione e applicazione delle policy di sicurezza tramite Microsoft Intune, VMware AirWatch e soluzioni MDM',
-      ],
-      technologies: [
-        'Active Directory',
-        'Okta',
-        'SAP IDM',
-        'ServiceNow',
-        'Microsoft Intune',
-        'VMware AirWatch',
-        'MDM',
-      ],
-    },
-    {
-      title: 'Tecnico Reti',
-      company: 'VMWay',
-      location: 'Piemonte, Italia',
-      period: 'Dic 2025 - Gen 2026',
-      description: [
-        'Installazione e configurazione di apparati di rete presso i clienti',
-        'Montaggio a rack di switch, router e dispositivi di rete',
-        'Installazione e sostituzione di moduli hardware',
-        'Verifica del corretto funzionamento degli apparati installati',
-        'Attività di troubleshooting e risoluzione problemi di rete',
-        'Collaborazione con team tecnici remoti per configurazioni e test',
-        'Supporto durante le fasi di attivazione e messa in produzione degli apparati',
-      ],
-      technologies: ['Cisco', 'TCP/IP', 'Routing & Switching'],
-    },
     {
       title: 'Tirocinante Sistemista di Rete',
       company: 'Novanext',
@@ -299,7 +217,6 @@ export const experiences = {
         'Affiancamento al team tecnico per installazione, aggiornamento e manutenzione di sistemi informatici',
         'Attività introduttive su tecnologie Cisco Meraki, Cisco DNA e infrastrutture di rete',
       ],
-      technologies: ['Cisco', 'Cisco Meraki', 'Cisco DNA'],
     },
     {
       title: 'Help Desk IT',
@@ -312,11 +229,85 @@ export const experiences = {
         'Supporto e assistenza agli utenti su Microsoft 365',
         'Monitoraggio della rete e supporto nella risoluzione di problemi di connettività e sicurezza',
       ],
-      technologies: ['Active Directory', 'Microsoft 365', 'Windows'],
     },
   ],
 };
 
-export const education = { /* SAME AS BEFORE */ };
-export const certifications = [ /* SAME AS BEFORE */ ];
-export const languages = [ /* SAME AS BEFORE */ ];
+export const education = {
+  en: [
+    {
+      degree: 'Bachelor\'s Degree in Computer Science',
+      institution: 'Università degli Studi di Verona',
+      location: 'Verona, Italia',
+      period: 'October 2022 - Present',
+      description: 'Computer Architecture, Operating Systems, Programming and Software Engineering, Algorithms',
+    },
+    {
+      degree: 'Network Systems Technician Course',
+      institution: 'Immaginazione E Lavoro',
+      location: 'Torino, Italia',
+      period: 'March 2025 - November 2025',
+      description: 'Network architecture and networking principles, IT security and system protection best practices, Operating systems (Windows and Linux), Windows and Windows Server 2022 administration, Virtual machines and VMware virtualization, CCNA Cisco Networking Academy',
+    },
+    {
+      degree: 'Specialized Technical Diploma in Computer Systems and Networks',
+      institution: 'ISTA - Istituto Specializzato di Tecnologia Applicata',
+      location: 'Rabat, Morocco',
+      period: 'September 2016 - July 2018',
+      description: 'Network infrastructure implementation, Windows and Linux environment administration, Digital infrastructure security',
+    },
+  ],
+  it: [
+    {
+      degree: 'Laurea Triennale in Informatica',
+      institution: 'Università degli Studi di Verona',
+      location: 'Verona, Italia',
+      period: 'Ottobre 2022 - Attuale',
+      description: 'Architettura dei calcolatori, Sistemi operativi, Programmazione e ingegneria del software, Algoritmi',
+    },
+    {
+      degree: 'Corso Tecnico Sistemista di Reti',
+      institution: 'Immaginazione E Lavoro',
+      location: 'Torino, Italia',
+      period: 'Marzo 2025 - Novembre 2025',
+      description: 'Architetture di rete e principi di networking, Sicurezza informatica e best practice di protezione dei sistemi, Sistemi operativi (Windows e Linux), Amministrazione Windows e Windows Server 2022, Utilizzo di macchine virtuali e virtualizzazione con VMware, CCNA Cisco Networking Academy',
+    },
+    {
+      degree: 'Diploma Tecnico Specializzato in Sistemi e Reti Informatici',
+      institution: 'ISTA - Istituto Specializzato di Tecnologia Applicata',
+      location: 'Rabat, Marocco',
+      period: 'Settembre 2016 - Luglio 2018',
+      description: 'Realizzazione di un\'infrastruttura di rete, Amministrazione di un ambiente Windows e Linux, Sicurezza di un\'infrastruttura digitale',
+    },
+  ],
+};
+
+export const certifications = [
+  {
+    name: 'Cisco Black Belt – Advance Support Stage 1',
+    issuer: 'Cisco Partner Training',
+    date: 'October 2025',
+  },
+  {
+    name: 'CCNA: Introduction to Networks',
+    issuer: 'Cisco Certified',
+    date: 'July 2025',
+  },
+  {
+    name: 'CCNA Routing and Switching: Routing and Switching Essentials',
+    issuer: 'Cisco Certified',
+    date: 'July 2018',
+  },
+  {
+    name: 'CCNA Security',
+    issuer: 'Cisco Certified',
+    date: 'July 2018',
+  },
+];
+
+export const languages = [
+  { name: 'Arabic', level: 'Native', proficiency: 100 },
+  { name: 'Italian', level: 'C1', proficiency: 90 },
+  { name: 'English', level: 'C1', proficiency: 90 },
+  { name: 'French', level: 'A2', proficiency: 40 },
+];
