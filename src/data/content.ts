@@ -161,7 +161,7 @@ export const personalInfo = {
   linkedin: 'https://www.linkedin.com/in/zakaria-aithamoubaha/',
   github: 'https://github.com/zakaria-aithamoubaha/Portfolio',
   location: 'Torino, Italia',
-  photo: 'https://img.sanishtech.com/u/b63590c40c54aceb9d36cae794dd9c51.jpg',
+  photo: 'profile.jpg',
 };
 
 export const skills = [
