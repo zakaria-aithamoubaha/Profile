@@ -64,7 +64,7 @@ export const content: Record<Language, Content> = {
     },
     hero: {
       name: 'Zakaria Ait Hamou Baha',
-      title: 'Junior Network & System Administrator',
+      title: 'IT Support & Network/System Engineer',
       location: 'Torino, Italia',
     },
     about: {
@@ -118,7 +118,7 @@ export const content: Record<Language, Content> = {
     },
     hero: {
       name: 'Zakaria Ait Hamou Baha',
-      title: 'Junior Network & System Administrator',
+      title: 'IT Support & Sistemista di Rete',
       location: 'Torino, Italia',
     },
     about: {
@@ -189,10 +189,30 @@ export const skills = [
 export const experiences = {
   en: [
     {
+      title: 'IT Support Specialist',
+      company: 'Everience',
+      location: 'Milano, Italy',
+      period: 'Feb 2026 - Present',
+      description: [
+        'Identity Access Management: user provisioning and lifecycle management using Active Directory, Okta, and SAP IDM',
+        'IT Service Management: incident, access, and request handling through ServiceNow while maintaining SLA compliance',
+        'Endpoint Mobility Management: device enrollment, configuration, and security policy enforcement using Microsoft Intune, VMware AirWatch, and MDM solutions',
+      ],
+      technologies: [
+        'Active Directory',
+        'Okta',
+        'SAP IDM',
+        'ServiceNow',
+        'Microsoft Intune',
+        'VMware AirWatch',
+        'MDM',
+      ],
+    },
+    {
       title: 'Tecnico Reti',
       company: 'VMWay',
       location: 'Piedmont, Italy',
-      period: 'Dec 2025 - Present',
+      period: 'Dec 2025 - Jan 2026',
       description: [
         'Installation and configuration of network devices for clients',
         'Rack mounting of switches, routers, and other network devices',
@@ -202,6 +222,7 @@ export const experiences = {
         'Collaboration with remote technical teams for configuration and testing',
         'Support during activation and production phases of devices',
       ],
+      technologies: ['Cisco', 'TCP/IP', 'Routing & Switching'],
     },
     {
       title: 'Network Systems Intern',
@@ -214,6 +235,7 @@ export const experiences = {
         'Technical team collaboration for system installation, updates, and maintenance',
         'Introduction to Cisco Meraki, Cisco DNA, and network infrastructure technologies',
       ],
+      technologies: ['Cisco', 'Cisco Meraki', 'Cisco DNA'],
     },
     {
       title: 'IT Help Desk',
@@ -226,14 +248,36 @@ export const experiences = {
         'Microsoft 365 user support and assistance',
         'Network monitoring and connectivity/security issue resolution',
       ],
+      technologies: ['Active Directory', 'Microsoft 365', 'Windows'],
     },
   ],
+
   it: [
+    {
+      title: 'IT Support Specialist',
+      company: 'Everience',
+      location: 'Milano, Italia',
+      period: 'Feb 2026 - Attuale',
+      description: [
+        'Gestione delle identità e degli accessi: provisioning utenti e gestione del ciclo di vita tramite Active Directory, Okta e SAP IDM',
+        'IT Service Management: gestione di incident, accessi e richieste tramite ServiceNow garantendo il rispetto degli SLA',
+        'Endpoint Mobility Management: registrazione dispositivi, configurazione e applicazione delle policy di sicurezza tramite Microsoft Intune, VMware AirWatch e soluzioni MDM',
+      ],
+      technologies: [
+        'Active Directory',
+        'Okta',
+        'SAP IDM',
+        'ServiceNow',
+        'Microsoft Intune',
+        'VMware AirWatch',
+        'MDM',
+      ],
+    },
     {
       title: 'Tecnico Reti',
       company: 'VMWay',
       location: 'Piemonte, Italia',
-      period: 'Dic 2025 - Attuale',
+      period: 'Dic 2025 - Gen 2026',
       description: [
         'Installazione e configurazione di apparati di rete presso i clienti',
         'Montaggio a rack di switch, router e dispositivi di rete',
@@ -243,6 +287,7 @@ export const experiences = {
         'Collaborazione con team tecnici remoti per configurazioni e test',
         'Supporto durante le fasi di attivazione e messa in produzione degli apparati',
       ],
+      technologies: ['Cisco', 'TCP/IP', 'Routing & Switching'],
     },
     {
       title: 'Tirocinante Sistemista di Rete',
@@ -255,6 +300,7 @@ export const experiences = {
         'Affiancamento al team tecnico per installazione, aggiornamento e manutenzione di sistemi informatici',
         'Attività introduttive su tecnologie Cisco Meraki, Cisco DNA e infrastrutture di rete',
       ],
+      technologies: ['Cisco', 'Cisco Meraki', 'Cisco DNA'],
     },
     {
       title: 'Help Desk IT',
@@ -267,91 +313,7 @@ export const experiences = {
         'Supporto e assistenza agli utenti su Microsoft 365',
         'Monitoraggio della rete e supporto nella risoluzione di problemi di connettività e sicurezza',
       ],
+      technologies: ['Active Directory', 'Microsoft 365', 'Windows'],
     },
   ],
 };
-
-export const education = {
-  en: [
-    {
-      degree: 'Bachelor\'s Degree in Computer Science',
-      institution: 'Università degli Studi di Verona',
-      location: 'Verona, Italia',
-      period: 'October 2022 - Present',
-      description:
-        'Computer Architecture, Operating Systems, Programming and Software Engineering, Algorithms',
-    },
-    {
-      degree: 'Network Systems Technician Course',
-      institution: 'Immaginazione E Lavoro',
-      location: 'Torino, Italia',
-      period: 'March 2025 - November 2025',
-      description:
-        'Network architecture and networking principles, IT security and system protection best practices, Operating systems (Windows and Linux), Windows and Windows Server 2022 administration, Virtual machines and VMware virtualization, CCNA Cisco Networking Academy',
-    },
-    {
-      degree: 'Specialized Technical Diploma in Computer Systems and Networks',
-      institution: 'ISTA - Istituto Specializzato di Tecnologia Applicata',
-      location: 'Rabat, Morocco',
-      period: 'September 2016 - July 2018',
-      description:
-        'Network infrastructure implementation, Windows and Linux environment administration, Digital infrastructure security',
-    },
-  ],
-  it: [
-    {
-      degree: 'Laurea Triennale in Informatica',
-      institution: 'Università degli Studi di Verona',
-      location: 'Verona, Italia',
-      period: 'Ottobre 2022 - Attuale',
-      description:
-        'Architettura dei calcolatori, Sistemi operativi, Programmazione e ingegneria del software, Algoritmi',
-    },
-    {
-      degree: 'Corso Tecnico Sistemista di Reti',
-      institution: 'Immaginazione E Lavoro',
-      location: 'Torino, Italia',
-      period: 'Marzo 2025 - Novembre 2025',
-      description:
-        'Architetture di rete e principi di networking, Sicurezza informatica e best practice di protezione dei sistemi, Sistemi operativi (Windows e Linux), Amministrazione Windows e Windows Server 2022, Utilizzo di macchine virtuali e virtualizzazione con VMware, CCNA Cisco Networking Academy',
-    },
-    {
-      degree: 'Diploma Tecnico Specializzato in Sistemi e Reti Informatici',
-      institution: 'ISTA - Istituto Specializzato di Tecnologia Applicata',
-      location: 'Rabat, Marocco',
-      period: 'Settembre 2016 - Luglio 2018',
-      description:
-        'Realizzazione di un\'infrastruttura di rete, Amministrazione di un ambiente Windows e Linux, Sicurezza di un\'infrastruttura digitale',
-    },
-  ],
-};
-
-export const certifications = [
-  {
-    name: 'Cisco Black Belt – Advance Support Stage 1',
-    issuer: 'Cisco Partner Training',
-    date: 'October 2025',
-  },
-  {
-    name: 'CCNA: Introduction to Networks',
-    issuer: 'Cisco Certified',
-    date: 'July 2025',
-  },
-  {
-    name: 'CCNA Routing and Switching: Routing and Switching Essentials',
-    issuer: 'Cisco Certified',
-    date: 'July 2018',
-  },
-  {
-    name: 'CCNA Security',
-    issuer: 'Cisco Certified',
-    date: 'July 2018',
-  },
-];
-
-export const languages = [
-  { name: 'Arabic', level: 'Native', proficiency: 100 },
-  { name: 'Italian', level: 'C1', proficiency: 90 },
-  { name: 'English', level: 'C1', proficiency: 90 },
-  { name: 'French', level: 'A2', proficiency: 40 },
-];
