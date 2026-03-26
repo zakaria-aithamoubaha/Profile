@@ -1,5 +1,7 @@
-import { useState } from 'react'; 
-import { content, experiences, Language } from './Experience'; // fixed import
+// Portfolio.tsx
+import { useState } from 'react';
+import { content } from '@/data/content'; // main site content
+import { experiences, Language } from './Experience'; // only experiences
 import { useToast } from '@/components/ui/use-toast';
 import Navigation from './Navigation';
 import Hero from './Hero';
@@ -50,9 +52,9 @@ export default function Portfolio() {
       <About content={currentContent} />
       <Skills content={currentContent} />
 
-      {/* Render experiences directly */}
+      {/* Experience Section */}
       <div className="portfolio-experience">
-        <h2>{content[language].experience.title}</h2>
+        <h2>{currentContent.experience.title}</h2>
         {experiences[language].map((exp, index) => (
           <div key={index} className="experience-item">
             <h3>{exp.title} – {exp.company}</h3>
