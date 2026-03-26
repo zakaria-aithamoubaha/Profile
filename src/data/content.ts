@@ -1,3 +1,5 @@
+// src/data/content.ts
+
 export type Language = 'en' | 'it';
 
 export interface Content {
@@ -51,6 +53,7 @@ export interface Content {
   };
 }
 
+// Main content
 export const content: Record<Language, Content> = {
   en: {
     nav: {
@@ -72,13 +75,29 @@ export const content: Record<Language, Content> = {
       description:
         "Passionate Network & System Administrator with CCNA certification and hands-on experience in network infrastructure, Cisco technologies, and system administration. Skilled in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently pursuing a Bachelor's degree in Computer Science while actively expanding expertise in enterprise networking solutions.",
     },
-    skills: { title: 'Technical Skills' },
-    experience: { title: 'Work Experience' },
-    education: { title: 'Education & Training' },
-    certifications: { title: 'Certifications' },
-    projects: { title: 'Projects', comingSoon: 'Projects coming soon' },
-    contact: { title: 'Get In Touch', copied: 'Copied to clipboard!' },
-    languages: { title: 'Languages' },
+    skills: {
+      title: 'Technical Skills',
+    },
+    experience: {
+      title: 'Work Experience',
+    },
+    education: {
+      title: 'Education & Training',
+    },
+    certifications: {
+      title: 'Certifications',
+    },
+    projects: {
+      title: 'Projects',
+      comingSoon: 'Projects coming soon',
+    },
+    contact: {
+      title: 'Get In Touch',
+      copied: 'Copied to clipboard!',
+    },
+    languages: {
+      title: 'Languages',
+    },
     cli: {
       welcome: "Welcome to Zakaria's Portfolio Terminal. Type \"help\" for available commands.",
       help: 'Available Commands',
@@ -108,13 +127,29 @@ export const content: Record<Language, Content> = {
       description:
         'Appassionato Junior Network & System Administrator con certificazione CCNA ed esperienza pratica in infrastrutture di rete, tecnologie Cisco e amministrazione di sistemi. Competente in Windows Server 2022, amministrazione Linux, virtualizzazione VMware e sicurezza di rete. Attualmente sto conseguendo una Laurea Triennale in Informatica mentre espando attivamente le competenze nelle soluzioni di networking aziendale.',
     },
-    skills: { title: 'Competenze Tecniche' },
-    experience: { title: 'Esperienza Lavorativa' },
-    education: { title: 'Istruzione e Formazione' },
-    certifications: { title: 'Certificazioni' },
-    projects: { title: 'Progetti', comingSoon: 'Progetti in arrivo' },
-    contact: { title: 'Contattami', copied: 'Copiato negli appunti!' },
-    languages: { title: 'Lingue' },
+    skills: {
+      title: 'Competenze Tecniche',
+    },
+    experience: {
+      title: 'Esperienza Lavorativa',
+    },
+    education: {
+      title: 'Istruzione e Formazione',
+    },
+    certifications: {
+      title: 'Certificazioni',
+    },
+    projects: {
+      title: 'Progetti',
+      comingSoon: 'Progetti in arrivo',
+    },
+    contact: {
+      title: 'Contattami',
+      copied: 'Copiato negli appunti!',
+    },
+    languages: {
+      title: 'Lingue',
+    },
     cli: {
       welcome: 'Benvenuto nel Terminale Portfolio di Zakaria. Digita "help" per i comandi disponibili.',
       help: 'Comandi Disponibili',
@@ -137,7 +172,7 @@ export const personalInfo = {
   photo: 'profile.jpg',
 };
 
-// Technical skills list
+// Skills array (renamed to skillsList to avoid name clash)
 export const skillsList = [
   'Cisco Networking (CCNA)',
   'Windows Server 2022',
@@ -152,7 +187,7 @@ export const skillsList = [
   'Microsoft 365',
 ];
 
-// Work experiences
+// Experiences by language
 export const experiences = {
   en: [
     {
@@ -254,26 +289,10 @@ export const experiences = {
 
 // Certifications
 export const certifications = [
-  {
-    name: 'Cisco Black Belt – Advance Support Stage 1',
-    issuer: 'Cisco Partner Training',
-    date: 'October 2025',
-  },
-  {
-    name: 'CCNA: Introduction to Networks',
-    issuer: 'Cisco Certified',
-    date: 'July 2025',
-  },
-  {
-    name: 'CCNA Routing and Switching: Routing and Switching Essentials',
-    issuer: 'Cisco Certified',
-    date: 'July 2018',
-  },
-  {
-    name: 'CCNA Security',
-    issuer: 'Cisco Certified',
-    date: 'July 2018',
-  },
+  { name: 'Cisco Black Belt – Advance Support Stage 1', issuer: 'Cisco Partner Training', date: 'October 2025' },
+  { name: 'CCNA: Introduction to Networks', issuer: 'Cisco Certified', date: 'July 2025' },
+  { name: 'CCNA Routing and Switching: Routing and Switching Essentials', issuer: 'Cisco Certified', date: 'July 2018' },
+  { name: 'CCNA Security', issuer: 'Cisco Certified', date: 'July 2018' },
 ];
 
 // Languages
