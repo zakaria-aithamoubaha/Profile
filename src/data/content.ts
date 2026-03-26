@@ -69,7 +69,7 @@ export const content: Record<Language, Content> = {
     },
     about: {
       title: 'About',
-      description: 'Passionate Junior Network & System Administrator with CCNA certification and hands-on experience in network infrastructure, Cisco technologies, and system administration. Skilled in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently pursuing a Bachelor\'s degree in Computer Science while actively expanding expertise in enterprise networking solutions.',
+      description: 'Passionate Network & System Administrator with CCNA certification and hands-on experience in network infrastructure, Cisco technologies, and system administration. Skilled in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently pursuing a Bachelor\'s degree in Computer Science while actively expanding expertise in enterprise networking solutions.',
     },
     skills: {
       title: 'Technical Skills',
@@ -233,51 +233,101 @@ export const experiences = {
   ],
 };
 
-export const education = {
+export const experiences = {
   en: [
     {
-      degree: 'Bachelor\'s Degree in Computer Science',
-      institution: 'Università degli Studi di Verona',
-      location: 'Verona, Italia',
-      period: 'October 2022 - Present',
-      description: 'Computer Architecture, Operating Systems, Programming and Software Engineering, Algorithms',
+      title: 'IT Support Specialist',
+      company: 'Everience',
+      location: 'Milano, Italy',
+      period: 'February 2026 - Current',
+      description: [
+        'Identity and Access Management: User provisioning and lifecycle management using Active Directory, Okta, and SAP IDM',
+        'IT Service Management: Incident, access, and request handling through ServiceNow while maintaining SLA compliance',
+        'Endpoint Mobility Management: Device enrollment, configuration, and security policy enforcement using Microsoft Intune, VMware AirWatch, and MDM solutions',
+      ],
     },
     {
-      degree: 'Network Systems Technician Course',
-      institution: 'Immaginazione E Lavoro',
-      location: 'Torino, Italia',
-      period: 'March 2025 - November 2025',
-      description: 'Network architecture and networking principles, IT security and system protection best practices, Operating systems (Windows and Linux), Windows and Windows Server 2022 administration, Virtual machines and VMware virtualization, CCNA Cisco Networking Academy',
+      title: 'Network Technician',
+      company: 'VMway',
+      location: 'Turin, Italy',
+      period: 'December 2025 - January 2026',
+      description: [
+        'Installation and configuration of network devices at client sites',
+        'Network troubleshooting and issue resolution',
+        'Collaboration with remote technical teams for configuration and testing activities',
+      ],
     },
     {
-      degree: 'Specialized Technical Diploma in Computer Systems and Networks',
-      institution: 'ISTA - Istituto Specializzato di Tecnologia Applicata',
+      title: 'Network Systems Administrator Intern',
+      company: 'Novanext',
+      location: 'Turin, Italy',
+      period: 'September 2025 - October 2025',
+      description: [
+        'Support in monitoring corporate networks',
+        'Assistance in configuring Cisco network devices',
+        'Participation in installation, upgrade, and maintenance of IT systems',
+        'Introductory activities on Cisco Meraki, Cisco DNA, and network infrastructures',
+      ],
+    },
+    {
+      title: 'IT Help Desk Technician',
+      company: 'Groupe ISCAE',
       location: 'Rabat, Morocco',
-      period: 'September 2016 - July 2018',
-      description: 'Network infrastructure implementation, Windows and Linux environment administration, Digital infrastructure security',
+      period: 'November 2019 - May 2020',
+      description: [
+        'Diagnosis and resolution of hardware and software issues, ensuring business continuity',
+        'Active Directory management: user and group creation and administration',
+        'User support for Microsoft 365 services',
+        'Network monitoring and support in resolving connectivity and security issues',
+      ],
     },
   ],
   it: [
     {
-      degree: 'Laurea Triennale in Informatica',
-      institution: 'Università degli Studi di Verona',
-      location: 'Verona, Italia',
-      period: 'Ottobre 2022 - Attuale',
-      description: 'Architettura dei calcolatori, Sistemi operativi, Programmazione e ingegneria del software, Algoritmi',
+      title: 'IT Support Specialist',
+      company: 'Everience',
+      location: 'Milano, Italia',
+      period: 'Febbraio 2026 - Attuale',
+      description: [
+        'Gestione delle identità e degli accessi: provisioning utenti e gestione del ciclo di vita tramite Active Directory, Okta e SAP IDM',
+        'IT Service Management: gestione di incident, accessi e richieste tramite ServiceNow, garantendo il rispetto degli SLA',
+        'Endpoint Mobility Management: registrazione dispositivi, configurazione e applicazione delle policy di sicurezza tramite Microsoft Intune, VMware AirWatch e soluzioni MDM',
+      ],
     },
     {
-      degree: 'Corso Tecnico Sistemista di Reti',
-      institution: 'Immaginazione E Lavoro',
+      title: 'Tecnico Reti',
+      company: 'VMway',
       location: 'Torino, Italia',
-      period: 'Marzo 2025 - Novembre 2025',
-      description: 'Architetture di rete e principi di networking, Sicurezza informatica e best practice di protezione dei sistemi, Sistemi operativi (Windows e Linux), Amministrazione Windows e Windows Server 2022, Utilizzo di macchine virtuali e virtualizzazione con VMware, CCNA Cisco Networking Academy',
+      period: 'Dicembre 2025 - Gennaio 2026',
+      description: [
+        'Installazione e configurazione di apparati di rete presso i clienti',
+        'Attività di troubleshooting e risoluzione problemi di rete',
+        'Collaborazione con team tecnici remoti per configurazioni e test',
+      ],
     },
     {
-      degree: 'Diploma Tecnico Specializzato in Sistemi e Reti Informatici',
-      institution: 'ISTA - Istituto Specializzato di Tecnologia Applicata',
+      title: 'Tirocinante Sistemista di Rete',
+      company: 'Novanext',
+      location: 'Torino, Italia',
+      period: 'Settembre 2025 - Ottobre 2025',
+      description: [
+        'Supporto al monitoraggio delle reti aziendali',
+        'Assistenza nella configurazione di apparati di rete Cisco',
+        'Affiancamento al team tecnico per installazione, aggiornamento e manutenzione di sistemi informatici',
+        'Attività introduttive su tecnologie Cisco Meraki, Cisco DNA e infrastrutture di rete',
+      ],
+    },
+    {
+      title: 'Help Desk IT',
+      company: 'Groupe ISCAE',
       location: 'Rabat, Marocco',
-      period: 'Settembre 2016 - Luglio 2018',
-      description: 'Realizzazione di un\'infrastruttura di rete, Amministrazione di un ambiente Windows e Linux, Sicurezza di un\'infrastruttura digitale',
+      period: 'Novembre 2019 - Maggio 2020',
+      description: [
+        'Diagnosi e risoluzione di problemi hardware e software, garantendo continuità operativa',
+        'Gestione di Active Directory: creazione e amministrazione utenti e gruppi',
+        'Supporto e assistenza agli utenti su Microsoft 365',
+        'Monitoraggio della rete e supporto nella risoluzione di problemi di connettività e sicurezza',
+      ],
     },
   ],
 };
