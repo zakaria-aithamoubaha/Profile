@@ -1,12 +1,12 @@
-// Portfolio.tsx
+
 import { useState } from 'react';
-import { content } from '@/data/content'; // main site content
-import { experiences, Language } from './Experience'; // only experiences
+import { content, Language } from '@/data/content';
 import { useToast } from '@/components/ui/use-toast';
 import Navigation from './Navigation';
 import Hero from './Hero';
 import About from './About';
 import Skills from './Skills';
+import Experience from './Experience';
 import Education from './Education';
 import Certifications from './Certifications';
 import Languages from './Languages';
@@ -51,28 +51,7 @@ export default function Portfolio() {
       <Hero content={currentContent} onCopy={handleCopy} />
       <About content={currentContent} />
       <Skills content={currentContent} />
-
-      {/* Experience Section */}
-      <div className="portfolio-experience">
-        <h2>{currentContent.experience.title}</h2>
-        {experiences[language].map((exp, index) => (
-          <div key={index} className="experience-item">
-            <h3>{exp.title} – {exp.company}</h3>
-            <p>{exp.location} | {exp.period}</p>
-            <ul>
-              {exp.description.map((desc, i) => (
-                <li key={i}>{desc}</li>
-              ))}
-            </ul>
-            {exp.technologies && (
-              <p>
-                <strong>Technologies:</strong> {exp.technologies.join(', ')}
-              </p>
-            )}
-          </div>
-        ))}
-      </div>
-
+      <Experience content={currentContent} language={language} />
       <Education content={currentContent} language={language} />
       <Certifications content={currentContent} />
       <Languages content={currentContent} />
