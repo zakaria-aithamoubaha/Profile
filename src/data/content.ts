@@ -292,38 +292,58 @@ export const experiences = {
 export const education = {
   en: [
     {
-      degree: "Bachelor's Degree in Computer Science",
-      institution: 'University of Turin',
+      degree: 'Network Systems Technician Course',
+      institution: 'Immaginazione E Lavoro',
       location: 'Turin, Italy',
-      period: '2022 - Present',
-      description: "Currently pursuing a Bachelor's degree in Computer Science with focus on networking and system administration.",
+      period: '31/03/2025 – 14/11/2025',
+      description:
+        'Network architectures and networking principles, IT security best practices, Windows & Linux systems administration, Windows Server 2022, VMware virtualization, CCNA Cisco Networking Academy.',
     },
     {
-      degree: 'Diploma in Computer Science & Networks',
-      institution: 'OFPPT',
+      degree: "Bachelor's Degree in Computer Science",
+      institution: 'University of Verona',
+      location: 'Verona, Italy',
+      period: '01/10/2022 – Present',
+      description:
+        'Computer Architecture, Operating Systems, Programming, Software Engineering, Algorithms.',
+    },
+    {
+      degree: 'Specialized Technical Diploma in Computer Systems and Networks',
+      institution: 'ISTA - Specialized Institute of Applied Technology',
       location: 'Rabat, Morocco',
-      period: '2017 - 2019',
-      description: 'Technical diploma covering networking fundamentals, system administration, and IT infrastructure.',
+      period: '15/09/2016 – 20/07/2018',
+      description:
+        'Network infrastructure implementation, Windows & Linux administration, digital infrastructure security.',
     },
   ],
+
   it: [
     {
-      degree: 'Laurea Triennale in Informatica',
-      institution: 'Università degli Studi di Torino',
+      degree: 'Corso Tecnico Sistemista di Reti',
+      institution: 'Immaginazione E Lavoro',
       location: 'Torino, Italia',
-      period: '2022 - In corso',
-      description: 'Corso di laurea in Informatica con focus su reti e amministrazione di sistemi.',
+      period: '31/03/2025 – 14/11/2025',
+      description:
+        'Architetture di rete e principi di networking, sicurezza informatica, amministrazione Windows e Linux, Windows Server 2022, virtualizzazione VMware, CCNA Cisco Networking Academy.',
     },
     {
-      degree: 'Diploma in Informatica e Reti',
-      institution: 'OFPPT',
+      degree: 'Laurea Triennale in Informatica',
+      institution: 'Università degli Studi di Verona',
+      location: 'Verona, Italia',
+      period: '01/10/2022 – Attuale',
+      description:
+        'Architettura dei calcolatori, sistemi operativi, programmazione, ingegneria del software, algoritmi.',
+    },
+    {
+      degree: 'Diploma Tecnico Specializzato in Sistemi e Reti Informatici',
+      institution: 'Istituto Specializzato di Tecnologia Applicata',
       location: 'Rabat, Marocco',
-      period: '2017 - 2019',
-      description: 'Diploma tecnico in fondamenti di networking, amministrazione di sistemi e infrastrutture IT.',
+      period: '15/09/2016 – 20/07/2018',
+      description:
+        "Realizzazione di infrastrutture di rete, amministrazione Windows e Linux, sicurezza delle infrastrutture digitali.",
     },
   ],
 };
-
 // Certifications
 export const certifications = [
   { name: 'Cisco Black Belt – Advance Support Stage 1', issuer: 'Cisco Partner Training', date: 'October 2025' },
