@@ -172,8 +172,8 @@ export const personalInfo = {
   photo: 'profile.jpg',
 };
 
-// Skills array (renamed to skillsList to avoid name clash)
-export const skillsList = [
+// Skills array — FIX: renamed from skillsList → skills to match what Skills.tsx and CLIMode.tsx import
+export const skills = [
   'Cisco Networking (CCNA)',
   'Windows Server 2022',
   'Linux Administration',
@@ -283,6 +283,43 @@ export const experiences = {
         'Supporto e assistenza agli utenti su Microsoft 365',
         'Monitoraggio della rete e supporto nella risoluzione di problemi di connettività e sicurezza',
       ],
+    },
+  ],
+};
+
+// Education — FIX: added missing export that Education.tsx and CLIMode.tsx expect
+// Update the entries below to match your actual education history
+export const education = {
+  en: [
+    {
+      degree: "Bachelor's Degree in Computer Science",
+      institution: 'University of Turin',
+      location: 'Turin, Italy',
+      period: '2022 - Present',
+      description: "Currently pursuing a Bachelor's degree in Computer Science with focus on networking and system administration.",
+    },
+    {
+      degree: 'Diploma in Computer Science & Networks',
+      institution: 'OFPPT',
+      location: 'Rabat, Morocco',
+      period: '2017 - 2019',
+      description: 'Technical diploma covering networking fundamentals, system administration, and IT infrastructure.',
+    },
+  ],
+  it: [
+    {
+      degree: 'Laurea Triennale in Informatica',
+      institution: 'Università degli Studi di Torino',
+      location: 'Torino, Italia',
+      period: '2022 - In corso',
+      description: 'Corso di laurea in Informatica con focus su reti e amministrazione di sistemi.',
+    },
+    {
+      degree: 'Diploma in Informatica e Reti',
+      institution: 'OFPPT',
+      location: 'Rabat, Marocco',
+      period: '2017 - 2019',
+      description: 'Diploma tecnico in fondamenti di networking, amministrazione di sistemi e infrastrutture IT.',
     },
   ],
 };
