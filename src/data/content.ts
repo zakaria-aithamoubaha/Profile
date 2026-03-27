@@ -292,20 +292,20 @@ export const experiences = {
 export const education = {
   en: [
     {
-      degree: 'Network Systems Technician Course',
-      institution: 'Immaginazione E Lavoro',
-      location: 'Turin, Italy',
-      period: '31/03/2025 – 14/11/2025',
-      description:
-        'Network architectures and networking principles, IT security best practices, Windows & Linux systems administration, Windows Server 2022, VMware virtualization, CCNA Cisco Networking Academy.',
-    },
-    {
       degree: "Bachelor's Degree in Computer Science",
       institution: 'University of Verona',
       location: 'Verona, Italy',
       period: '01/10/2022 – Present',
       description:
         'Computer Architecture, Operating Systems, Programming, Software Engineering, Algorithms.',
+    },
+    {
+      degree: 'Network Systems Technician Course',
+      institution: 'Immaginazione E Lavoro',
+      location: 'Turin, Italy',
+      period: '31/03/2025 – 14/11/2025',
+      description:
+        'Network architectures and networking principles, IT security best practices, Windows & Linux systems administration, Windows Server 2022, VMware virtualization, CCNA Cisco Networking Academy.',
     },
     {
       degree: 'Specialized Technical Diploma in Computer Systems and Networks',
@@ -319,20 +319,20 @@ export const education = {
 
   it: [
     {
-      degree: 'Corso Tecnico Sistemista di Reti',
-      institution: 'Immaginazione E Lavoro',
-      location: 'Torino, Italia',
-      period: '31/03/2025 – 14/11/2025',
-      description:
-        'Architetture di rete e principi di networking, sicurezza informatica, amministrazione Windows e Linux, Windows Server 2022, virtualizzazione VMware, CCNA Cisco Networking Academy.',
-    },
-    {
       degree: 'Laurea Triennale in Informatica',
       institution: 'Università degli Studi di Verona',
       location: 'Verona, Italia',
       period: '01/10/2022 – Attuale',
       description:
         'Architettura dei calcolatori, sistemi operativi, programmazione, ingegneria del software, algoritmi.',
+    },
+    {
+      degree: 'Corso Tecnico Sistemista di Reti',
+      institution: 'Immaginazione E Lavoro',
+      location: 'Torino, Italia',
+      period: '31/03/2025 – 14/11/2025',
+      description:
+        'Architetture di rete e principi di networking, sicurezza informatica, amministrazione Windows e Linux, Windows Server 2022, virtualizzazione VMware, CCNA Cisco Networking Academy.',
     },
     {
       degree: 'Diploma Tecnico Specializzato in Sistemi e Reti Informatici',
