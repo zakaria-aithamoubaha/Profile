@@ -67,8 +67,8 @@ export const content: Record<Language, Content> = {
     },
     hero: {
       name: 'Zakaria Ait Hamou Baha',
-      title: 'Junior Network & System Administrator',
-      location: 'Turin, Italy',
+      title: 'Network & IT System Specialist ',
+      location: 'Milano, Italy',
     },
     about: {
       title: 'About',
@@ -119,8 +119,8 @@ export const content: Record<Language, Content> = {
     },
     hero: {
       name: 'Zakaria Ait Hamou Baha',
-      title: 'Junior Network & System Administrator',
-      location: 'Torino, Italia',
+      title: 'Network & IT System Specialist',
+      location: 'Milano, Italia',
     },
     about: {
       title: 'Chi Sono',
@@ -168,7 +168,7 @@ export const personalInfo = {
   phone: '(+39) 3519411806',
   linkedin: 'https://www.linkedin.com/in/zakaria-aithamoubaha/',
   github: 'https://github.com/zakaria-aithamoubaha/Portfolio',
-  location: 'Torino, Italia',
+  location: 'Milano, Italia',
   photo: 'profile.jpg',
 };
 
