@@ -1,6 +1,6 @@
-
-import { Content, Language, experiences } from '@/data/content';
+// src/components/Experience.tsx
 import { Briefcase, MapPin, Calendar } from 'lucide-react';
+import { Content, Language, experiences } from '@/data/content';
 
 interface ExperienceProps {
   content: Content;
@@ -16,46 +16,61 @@ export default function Experience({ content, language }: ExperienceProps) {
         <h2 className="font-display text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-12">
           {content.experience.title}
         </h2>
-        <div className="space-y-8">
-          {experienceList.map((exp, index) => (
-            <div
-              key={index}
+
+        {/* Using a <ul>/<li> pair for proper list semantics.
+            Screen readers announce "list of N items" which is more
+            helpful than a series of plain <div> elements. */}
+        <ul className="space-y-8">
+          {experienceList.map((exp) => (
+            <li
+              // Company + title is a stable, unique composite key
+              key={`${exp.company}-${exp.title}`}
               className="group bg-white p-8 rounded-xl border-2 border-[#e5e5e5] hover:border-[#049fd9] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 bg-[#049fd9]/10 rounded-lg group-hover:bg-[#049fd9]/20 transition-colors">
+                {/* Icon badge */}
+                <div
+                  className="p-3 bg-[#049fd9]/10 rounded-lg group-hover:bg-[#049fd9]/20 transition-colors flex-shrink-0"
+                  aria-hidden="true"
+                >
                   <Briefcase className="w-6 h-6 text-[#049fd9]" />
                 </div>
-                <div className="flex-1">
+
+                <div className="flex-1 min-w-0">
                   <h3 className="font-display text-2xl font-bold text-[#1a1a1a] mb-2">
                     {exp.title}
                   </h3>
                   <p className="font-body text-lg text-[#049fd9] font-semibold mb-3">
                     {exp.company}
                   </p>
+
                   <div className="flex flex-wrap gap-4 text-sm text-[#6b6b6b] mb-4">
                     <div className="flex items-center gap-1">
-                      <MapPin className="w-4 h-4" />
+                      <MapPin className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
                       <span className="font-body">{exp.location}</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      <span className="font-body">{exp.period}</span>
+                      <Calendar className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
+                      <time className="font-body">{exp.period}</time>
                     </div>
                   </div>
                 </div>
               </div>
-              <ul className="space-y-2 ml-16">
+
+              {/* Description bullets */}
+              <ul className="space-y-2 ml-16" aria-label={`Responsibilities at ${exp.company}`}>
                 {exp.description.map((item, i) => (
                   <li key={i} className="font-body text-[#6b6b6b] flex items-start gap-2">
-                    <span className="text-[#049fd9] mt-1">•</span>
+                    <span className="text-[#049fd9] mt-1 select-none" aria-hidden="true">
+                      •
+                    </span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
