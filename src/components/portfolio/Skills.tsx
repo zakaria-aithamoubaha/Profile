@@ -1,3 +1,4 @@
+// src/components/Skills.tsx
 import { Content, skills } from '@/data/content';
 
 interface SkillsProps {
@@ -11,18 +12,26 @@ export default function Skills({ content }: SkillsProps) {
         <h2 className="font-display text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-12">
           {content.skills.title}
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
+
+        {/* Using skill name as key instead of array index.
+            Index keys cause unnecessary re-mounts when the list order
+            changes (e.g., after a sort or filter). Since skill names are
+            unique strings this is a stable, meaningful key. */}
+        <ul
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          aria-label="Technical skills list"
+        >
+          {skills.map((skill) => (
+            <li
+              key={skill}
               className="group px-6 py-4 bg-white border-2 border-[#e5e5e5] rounded-lg hover:border-[#049fd9] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
               <span className="font-body text-sm md:text-base text-[#1a1a1a] group-hover:text-[#049fd9] transition-colors">
                 {skill}
               </span>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
