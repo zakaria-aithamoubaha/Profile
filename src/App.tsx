@@ -1,17 +1,12 @@
-import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 
-function App() {
+// Suspense was wrapping a synchronous component with no lazy() imports.
+// Removed the redundant wrapper and the empty <></> fragment.
+export default function App() {
   return (
-    <Suspense fallback={<p>Loading...</p>}>
-      <>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </>
-    </Suspense>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
-
-export default App;
