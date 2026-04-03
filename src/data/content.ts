@@ -67,13 +67,13 @@ export const content: Record<Language, Content> = {
     },
     hero: {
       name: 'Zakaria Ait Hamou Baha',
-      title: 'Network & IT System Specialist ',
-      location: 'Milano, Italy',
+      title: 'Network & IT Systems Specialist',
+      location: 'Milan, Italy',
     },
     about: {
-      title: 'About',
+      title: 'About Me',
       description:
-        "Passionate Network & System Administrator with CCNA certification and hands-on experience in network infrastructure, Cisco technologies, and system administration. Skilled in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently pursuing a Bachelor's degree in Computer Science while actively expanding expertise in enterprise networking solutions.",
+        "Network & IT Systems Specialist with CCNA certification and proven hands-on experience in enterprise network infrastructure, Cisco technologies, and systems administration. Proficient in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently completing a Bachelor's degree in Computer Science, with a focused drive to design and maintain reliable, scalable networking solutions.",
     },
     skills: {
       title: 'Technical Skills',
@@ -89,7 +89,7 @@ export const content: Record<Language, Content> = {
     },
     projects: {
       title: 'Projects',
-      comingSoon: 'Projects coming soon',
+      comingSoon: 'Projects coming soon — stay tuned.',
     },
     contact: {
       title: 'Get In Touch',
@@ -99,9 +99,9 @@ export const content: Record<Language, Content> = {
       title: 'Languages',
     },
     cli: {
-      welcome: "Welcome to Zakaria's Portfolio Terminal. Type \"help\" for available commands.",
+      welcome: "Welcome to Zakaria's portfolio terminal. Type \"help\" to see available commands.",
       help: 'Available Commands',
-      commandNotFound: 'Command not found. Type "help" for available commands.',
+      commandNotFound: 'Command not found. Type "help" to see available commands.',
       availableCommands:
         'Available commands: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
       languageChanged: 'Language changed to',
@@ -119,13 +119,13 @@ export const content: Record<Language, Content> = {
     },
     hero: {
       name: 'Zakaria Ait Hamou Baha',
-      title: 'Network & IT System Specialist',
+      title: 'Network & IT Systems Specialist',
       location: 'Milano, Italia',
     },
     about: {
       title: 'Chi Sono',
       description:
-        'Appassionato Junior Network & System Administrator con certificazione CCNA ed esperienza pratica in infrastrutture di rete, tecnologie Cisco e amministrazione di sistemi. Competente in Windows Server 2022, amministrazione Linux, virtualizzazione VMware e sicurezza di rete. Attualmente sto conseguendo una Laurea Triennale in Informatica mentre espando attivamente le competenze nelle soluzioni di networking aziendale.',
+        'Network & IT Systems Specialist con certificazione CCNA ed esperienza concreta in infrastrutture di rete aziendali, tecnologie Cisco e amministrazione di sistemi. Competente in Windows Server 2022, amministrazione Linux, virtualizzazione VMware e sicurezza di rete. Attualmente in fase di completamento della Laurea Triennale in Informatica, con un forte orientamento alla progettazione e alla gestione di soluzioni di rete affidabili e scalabili.',
     },
     skills: {
       title: 'Competenze Tecniche',
@@ -141,7 +141,7 @@ export const content: Record<Language, Content> = {
     },
     projects: {
       title: 'Progetti',
-      comingSoon: 'Progetti in arrivo',
+      comingSoon: 'Progetti in arrivo — prossimamente.',
     },
     contact: {
       title: 'Contattami',
@@ -151,9 +151,9 @@ export const content: Record<Language, Content> = {
       title: 'Lingue',
     },
     cli: {
-      welcome: 'Benvenuto nel Terminale Portfolio di Zakaria. Digita "help" per i comandi disponibili.',
+      welcome: 'Benvenuto nel terminale portfolio di Zakaria. Digita "help" per vedere i comandi disponibili.',
       help: 'Comandi Disponibili',
-      commandNotFound: 'Comando non trovato. Digita "help" per i comandi disponibili.',
+      commandNotFound: 'Comando non trovato. Digita "help" per vedere i comandi disponibili.',
       availableCommands:
         'Comandi disponibili: about, skills, experience, education, certifications, projects, contact, lang [en|it], help, clear, exit',
       languageChanged: 'Lingua cambiata in',
@@ -344,6 +344,7 @@ export const education = {
     },
   ],
 };
+
 // Certifications
 export const certifications = [
   { name: 'Cisco Black Belt – Advance Support Stage 1', issuer: 'Cisco Partner Training', date: 'October 2025' },
