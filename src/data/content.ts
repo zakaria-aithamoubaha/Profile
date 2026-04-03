@@ -1,6 +1,5 @@
 // src/data/content.ts
 
-// ── Types ──────────────────────────────────────────────────────────────────
 export type Language = 'en' | 'it';
 
 export interface Content {
@@ -22,13 +21,29 @@ export interface Content {
     title: string;
     description: string;
   };
-  skills: { title: string };
-  experience: { title: string };
-  education: { title: string };
-  certifications: { title: string };
-  projects: { title: string; comingSoon: string };
-  contact: { title: string; copied: string };
-  languages: { title: string };
+  skills: {
+    title: string;
+  };
+  experience: {
+    title: string;
+  };
+  education: {
+    title: string;
+  };
+  certifications: {
+    title: string;
+  };
+  projects: {
+    title: string;
+    comingSoon: string;
+  };
+  contact: {
+    title: string;
+    copied: string;
+  };
+  languages: {
+    title: string;
+  };
   cli: {
     welcome: string;
     help: string;
@@ -38,45 +53,7 @@ export interface Content {
   };
 }
 
-export interface ExperienceEntry {
-  title: string;
-  company: string;
-  location: string;
-  period: string;
-  description: string[];
-}
-
-export interface EducationEntry {
-  degree: string;
-  institution: string;
-  location: string;
-  period: string;
-  description: string;
-}
-
-export interface CertificationEntry {
-  name: string;
-  issuer: string;
-  date: string;
-}
-
-export interface LanguageEntry {
-  name: string;
-  level: string;
-  proficiency: number;
-}
-
-export interface PersonalInfo {
-  name: string;
-  email: string;
-  phone: string;
-  linkedin: string;
-  github: string;
-  location: string;
-  photo: string;
-}
-
-// ── UI Content (bilingual) ────────────────────────────────────────────────
+// Main content
 export const content: Record<Language, Content> = {
   en: {
     nav: {
@@ -90,7 +67,7 @@ export const content: Record<Language, Content> = {
     },
     hero: {
       name: 'Zakaria Ait Hamou Baha',
-      title: 'Network & IT System Specialist',
+      title: 'Network & IT System Specialist ',
       location: 'Milano, Italy',
     },
     about: {
@@ -98,15 +75,31 @@ export const content: Record<Language, Content> = {
       description:
         "Passionate Network & System Administrator with CCNA certification and hands-on experience in network infrastructure, Cisco technologies, and system administration. Skilled in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently pursuing a Bachelor's degree in Computer Science while actively expanding expertise in enterprise networking solutions.",
     },
-    skills: { title: 'Technical Skills' },
-    experience: { title: 'Work Experience' },
-    education: { title: 'Education & Training' },
-    certifications: { title: 'Certifications' },
-    projects: { title: 'Projects', comingSoon: 'Projects coming soon' },
-    contact: { title: 'Get In Touch', copied: 'Copied to clipboard!' },
-    languages: { title: 'Languages' },
+    skills: {
+      title: 'Technical Skills',
+    },
+    experience: {
+      title: 'Work Experience',
+    },
+    education: {
+      title: 'Education & Training',
+    },
+    certifications: {
+      title: 'Certifications',
+    },
+    projects: {
+      title: 'Projects',
+      comingSoon: 'Projects coming soon',
+    },
+    contact: {
+      title: 'Get In Touch',
+      copied: 'Copied to clipboard!',
+    },
+    languages: {
+      title: 'Languages',
+    },
     cli: {
-      welcome: 'Welcome to Zakaria\'s Portfolio Terminal. Type "help" for available commands.',
+      welcome: "Welcome to Zakaria's Portfolio Terminal. Type \"help\" for available commands.",
       help: 'Available Commands',
       commandNotFound: 'Command not found. Type "help" for available commands.',
       availableCommands:
@@ -114,7 +107,6 @@ export const content: Record<Language, Content> = {
       languageChanged: 'Language changed to',
     },
   },
-
   it: {
     nav: {
       about: 'Chi Sono',
@@ -135,13 +127,29 @@ export const content: Record<Language, Content> = {
       description:
         'Appassionato Junior Network & System Administrator con certificazione CCNA ed esperienza pratica in infrastrutture di rete, tecnologie Cisco e amministrazione di sistemi. Competente in Windows Server 2022, amministrazione Linux, virtualizzazione VMware e sicurezza di rete. Attualmente sto conseguendo una Laurea Triennale in Informatica mentre espando attivamente le competenze nelle soluzioni di networking aziendale.',
     },
-    skills: { title: 'Competenze Tecniche' },
-    experience: { title: 'Esperienza Lavorativa' },
-    education: { title: 'Istruzione e Formazione' },
-    certifications: { title: 'Certificazioni' },
-    projects: { title: 'Progetti', comingSoon: 'Progetti in arrivo' },
-    contact: { title: 'Contattami', copied: 'Copiato negli appunti!' },
-    languages: { title: 'Lingue' },
+    skills: {
+      title: 'Competenze Tecniche',
+    },
+    experience: {
+      title: 'Esperienza Lavorativa',
+    },
+    education: {
+      title: 'Istruzione e Formazione',
+    },
+    certifications: {
+      title: 'Certificazioni',
+    },
+    projects: {
+      title: 'Progetti',
+      comingSoon: 'Progetti in arrivo',
+    },
+    contact: {
+      title: 'Contattami',
+      copied: 'Copiato negli appunti!',
+    },
+    languages: {
+      title: 'Lingue',
+    },
     cli: {
       welcome: 'Benvenuto nel Terminale Portfolio di Zakaria. Digita "help" per i comandi disponibili.',
       help: 'Comandi Disponibili',
@@ -153,8 +161,8 @@ export const content: Record<Language, Content> = {
   },
 };
 
-// ── Static Data ───────────────────────────────────────────────────────────
-export const personalInfo: PersonalInfo = {
+// Personal info
+export const personalInfo = {
   name: 'Zakaria Ait Hamou Baha',
   email: 'zakariaaithamoubaha@gmail.com',
   phone: '(+39) 3519411806',
@@ -164,7 +172,8 @@ export const personalInfo: PersonalInfo = {
   photo: 'profile.jpg',
 };
 
-export const skills: string[] = [
+// Skills array — FIX: renamed from skillsList → skills to match what Skills.tsx and CLIMode.tsx import
+export const skills = [
   'Cisco Networking (CCNA)',
   'Windows Server 2022',
   'Linux Administration',
@@ -178,7 +187,8 @@ export const skills: string[] = [
   'Microsoft 365',
 ];
 
-export const experiences: Record<Language, ExperienceEntry[]> = {
+// Experiences by language
+export const experiences = {
   en: [
     {
       title: 'IT Support Specialist',
@@ -227,7 +237,6 @@ export const experiences: Record<Language, ExperienceEntry[]> = {
       ],
     },
   ],
-
   it: [
     {
       title: 'IT Support Specialist',
@@ -278,7 +287,9 @@ export const experiences: Record<Language, ExperienceEntry[]> = {
   ],
 };
 
-export const education: Record<Language, EducationEntry[]> = {
+// Education — FIX: added missing export that Education.tsx and CLIMode.tsx expect
+// Update the entries below to match your actual education history
+export const education = {
   en: [
     {
       degree: "Bachelor's Degree in Computer Science",
@@ -329,19 +340,20 @@ export const education: Record<Language, EducationEntry[]> = {
       location: 'Rabat, Marocco',
       period: '15/09/2016 – 20/07/2018',
       description:
-        'Realizzazione di infrastrutture di rete, amministrazione Windows e Linux, sicurezza delle infrastrutture digitali.',
+        "Realizzazione di infrastrutture di rete, amministrazione Windows e Linux, sicurezza delle infrastrutture digitali.",
     },
   ],
 };
-
-export const certifications: CertificationEntry[] = [
+// Certifications
+export const certifications = [
   { name: 'Cisco Black Belt – Advance Support Stage 1', issuer: 'Cisco Partner Training', date: 'October 2025' },
   { name: 'CCNA: Introduction to Networks', issuer: 'Cisco Certified', date: 'July 2025' },
   { name: 'CCNA Routing and Switching: Routing and Switching Essentials', issuer: 'Cisco Certified', date: 'July 2018' },
   { name: 'CCNA Security', issuer: 'Cisco Certified', date: 'July 2018' },
 ];
 
-export const languages: LanguageEntry[] = [
+// Languages
+export const languages = [
   { name: 'Arabic', level: 'Native', proficiency: 100 },
   { name: 'Italian', level: 'C1', proficiency: 90 },
   { name: 'English', level: 'C1', proficiency: 90 },
