@@ -21,29 +21,13 @@ export interface Content {
     title: string;
     description: string;
   };
-  skills: {
-    title: string;
-  };
-  experience: {
-    title: string;
-  };
-  education: {
-    title: string;
-  };
-  certifications: {
-    title: string;
-  };
-  projects: {
-    title: string;
-    comingSoon: string;
-  };
-  contact: {
-    title: string;
-    copied: string;
-  };
-  languages: {
-    title: string;
-  };
+  skills: { title: string };
+  experience: { title: string };
+  education: { title: string };
+  certifications: { title: string };
+  projects: { title: string; comingSoon: string };
+  contact: { title: string; copied: string };
+  languages: { title: string };
   cli: {
     welcome: string;
     help: string;
@@ -53,7 +37,6 @@ export interface Content {
   };
 }
 
-// Main content
 export const content: Record<Language, Content> = {
   en: {
     nav: {
@@ -75,18 +58,10 @@ export const content: Record<Language, Content> = {
       description:
         "Network & IT Systems Specialist with CCNA certification and proven hands-on experience in enterprise network infrastructure, Cisco technologies, and systems administration. Proficient in Windows Server 2022, Linux administration, VMware virtualization, and network security. Currently completing a Bachelor's degree in Computer Science, with a focused drive to design and maintain reliable, scalable networking solutions.",
     },
-    skills: {
-      title: 'Technical Skills',
-    },
-    experience: {
-      title: 'Work Experience',
-    },
-    education: {
-      title: 'Education & Training',
-    },
-    certifications: {
-      title: 'Certifications',
-    },
+    skills: { title: 'Technical Skills' },
+    experience: { title: 'Work Experience' },
+    education: { title: 'Education & Training' },
+    certifications: { title: 'Certifications' },
     projects: {
       title: 'Projects',
       comingSoon: 'Projects coming soon — stay tuned.',
@@ -95,11 +70,9 @@ export const content: Record<Language, Content> = {
       title: 'Get In Touch',
       copied: 'Copied to clipboard!',
     },
-    languages: {
-      title: 'Languages',
-    },
+    languages: { title: 'Languages' },
     cli: {
-      welcome: "Welcome to Zakaria's portfolio terminal. Type \"help\" to see available commands.",
+      welcome: 'Welcome to Zakaria\'s portfolio terminal. Type "help" to see available commands.',
       help: 'Available Commands',
       commandNotFound: 'Command not found. Type "help" to see available commands.',
       availableCommands:
@@ -107,6 +80,7 @@ export const content: Record<Language, Content> = {
       languageChanged: 'Language changed to',
     },
   },
+
   it: {
     nav: {
       about: 'Chi Sono',
@@ -127,18 +101,10 @@ export const content: Record<Language, Content> = {
       description:
         'Network & IT Systems Specialist con certificazione CCNA ed esperienza concreta in infrastrutture di rete aziendali, tecnologie Cisco e amministrazione di sistemi. Competente in Windows Server 2022, amministrazione Linux, virtualizzazione VMware e sicurezza di rete. Attualmente in fase di completamento della Laurea Triennale in Informatica, con un forte orientamento alla progettazione e alla gestione di soluzioni di rete affidabili e scalabili.',
     },
-    skills: {
-      title: 'Competenze Tecniche',
-    },
-    experience: {
-      title: 'Esperienza Lavorativa',
-    },
-    education: {
-      title: 'Istruzione e Formazione',
-    },
-    certifications: {
-      title: 'Certificazioni',
-    },
+    skills: { title: 'Competenze Tecniche' },
+    experience: { title: 'Esperienza Lavorativa' },
+    education: { title: 'Istruzione e Formazione' },
+    certifications: { title: 'Certificazioni' },
     projects: {
       title: 'Progetti',
       comingSoon: 'Progetti in arrivo — prossimamente.',
@@ -147,9 +113,7 @@ export const content: Record<Language, Content> = {
       title: 'Contattami',
       copied: 'Copiato negli appunti!',
     },
-    languages: {
-      title: 'Lingue',
-    },
+    languages: { title: 'Lingue' },
     cli: {
       welcome: 'Benvenuto nel terminale portfolio di Zakaria. Digita "help" per vedere i comandi disponibili.',
       help: 'Comandi Disponibili',
@@ -161,7 +125,6 @@ export const content: Record<Language, Content> = {
   },
 };
 
-// Personal info
 export const personalInfo = {
   name: 'Zakaria Ait Hamou Baha',
   email: 'zakariaaithamoubaha@gmail.com',
@@ -172,7 +135,6 @@ export const personalInfo = {
   photo: 'profile.jpg',
 };
 
-// Skills array — FIX: renamed from skillsList → skills to match what Skills.tsx and CLIMode.tsx import
 export const skills = [
   'Cisco Networking (CCNA)',
   'Windows Server 2022',
@@ -185,9 +147,14 @@ export const skills = [
   'Cisco Meraki',
   'Cisco DNA',
   'Microsoft 365',
+  'Microsoft Intune',
+  'Microsoft Entra',
+  'ServiceNow',
+  'SAP IDM',
+  'Jamf',
+  'Oracle Workspace',
 ];
 
-// Experiences by language
 export const experiences = {
   en: [
     {
@@ -287,8 +254,6 @@ export const experiences = {
   ],
 };
 
-// Education — FIX: added missing export that Education.tsx and CLIMode.tsx expect
-// Update the entries below to match your actual education history
 export const education = {
   en: [
     {
@@ -316,7 +281,6 @@ export const education = {
         'Network infrastructure implementation, Windows & Linux administration, digital infrastructure security.',
     },
   ],
-
   it: [
     {
       degree: 'Laurea Triennale in Informatica',
@@ -340,12 +304,11 @@ export const education = {
       location: 'Rabat, Marocco',
       period: '15/09/2016 – 20/07/2018',
       description:
-        "Realizzazione di infrastrutture di rete, amministrazione Windows e Linux, sicurezza delle infrastrutture digitali.",
+        'Realizzazione di infrastrutture di rete, amministrazione Windows e Linux, sicurezza delle infrastrutture digitali.',
     },
   ],
 };
 
-// Certifications
 export const certifications = [
   { name: 'Cisco Black Belt – Advance Support Stage 1', issuer: 'Cisco Partner Training', date: 'October 2025' },
   { name: 'CCNA: Introduction to Networks', issuer: 'Cisco Certified', date: 'July 2025' },
@@ -353,7 +316,6 @@ export const certifications = [
   { name: 'CCNA Security', issuer: 'Cisco Certified', date: 'July 2018' },
 ];
 
-// Languages
 export const languages = [
   { name: 'Arabic', level: 'Native', proficiency: 100 },
   { name: 'Italian', level: 'C1', proficiency: 90 },
